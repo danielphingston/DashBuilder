@@ -21,8 +21,8 @@
     <div id="main">
       <grid-layout
         :layout="layout"
-        :col-num="12"
-        :row-height="30"
+        :col-num="24"
+        :row-height="40"
         :is-draggable="edit"
         :is-resizable="edit"
         :vertical-compact="true"
@@ -45,21 +45,21 @@
             :style="myStyles"
             style="width:100%"
           />
-          <div style="width:100%;height:100%;position:relative">
-            <!-- <input
+          <!-- <div style="width:100%;height:100%;position:relative"> -->
+          <!-- <input
               type="text"
               v-model="item.src"
               v-if="edit"
               style="position:absolute;top:5px;left:1%;width:80%"
-            />-->
-            <button
-              style="position:absolute;top:-25px;right:20px"
-              v-if="edit"
-              @click="deleteItem(index)"
-            >❌</button>
+          />-->
+          <button
+            style="position:absolute;top:25px;right:20px"
+            v-if="edit"
+            @click="deleteItem(index)"
+          >❌</button>
 
-            <!-- <iframe v-bind:src="item.src" width="100%" height="100%"></iframe> -->
-          </div>
+          <!-- <iframe v-bind:src="item.src" width="100%" height="100%"></iframe> -->
+          <!-- </div> -->
         </grid-item>
       </grid-layout>
     </div>
@@ -84,13 +84,13 @@
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-  height: 110%;
+  height: 100%;
   display: grid;
   grid-template-areas: nav main;
   grid-template-columns: 10% 89%;
   grid-template-rows: auto;
   grid-gap: 0.8%;
-  min-height: 98vh;
+  min-height: 100vh;
 }
 nav {
   background-color: #204969;
