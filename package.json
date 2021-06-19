@@ -13,7 +13,7 @@
         "chartjs": "^0.3.24",
         "chartjs-plugin-colorschemes": "^0.4.0",
         "core-js": "^2.6.5",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "vue": "^2.6.10",
         "vue-chartjs": "^3.4.2",
         "vue-grid-layout": "^2.3.4",
